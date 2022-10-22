@@ -26,7 +26,7 @@ function Home() {
       </section>
 
       <section id="missions">
-        <div id="missionsTitle">
+        <div id="missionsTitle" className="subHeading">
           Our Main
           <h2>MISSIONS</h2>
         </div>
@@ -89,9 +89,28 @@ function Home() {
           </div>
         </div>
 
-        <div id="achievementsContainer">
-
+        <div id="achievementsCharts">
+          <div className="subHeading">
+            Mission
+            <h2>ACHIEVED</h2>
+          </div>
+          <div id="achievementsContainer">
+            <ul>
+              <li className="achievementItem">Water Wells <span className="achievementNum">30</span></li>
+              <li className="achievementItem">English Teachers <span className="achievementNum">221</span></li>
+              <li className="achievementItem">Vaccines <span className="achievementNum">1900</span></li>
+              <li className="achievementItem">New Schools <span className="achievementNum">10</span></li>
+              <li className="achievementItem">Doctors <span className="achievementNum">150</span></li>
+              <li className="achievementItem">New Houses <span className="achievementNum">43</span></li>
+              <li className="achievementItem">Clothes <span className="achievementNum">500</span></li>
+              <li className="achievementItem">New Shoes <span className="achievementNum">1000</span></li>
+            </ul>
+          </div>
         </div>
+      </section>
+
+      <section id="newsletter">
+
       </section>
     </div>
   );
