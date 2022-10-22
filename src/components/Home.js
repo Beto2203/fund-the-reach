@@ -13,14 +13,14 @@ function Home() {
         <h1>BETTER LIFE FOR EVERYONE</h1>
       </main>
 
-      <section id="objectives">
-        <div id="education" className="objectiveCard">
+      <section id="objectives" className="cardContainer">
+        <div id="education" className="cardItem">
           <span>Education</span>
         </div>
-        <div id="health" className="objectiveCard">
+        <div id="health" className="cardItem">
           <span>Health</span>
         </div>
-        <div id="water" className="objectiveCard">
+        <div id="water" className="cardItem">
           <span>Water</span>
         </div>
       </section>
@@ -34,32 +34,32 @@ function Home() {
         <ul id="missionsContainer">
           <li>
             <div className="missionIcon">{HiOutlineCircleStack()}</div>
-            <br/>
+            <br />
             Donations
           </li>
-          <li >
+          <li>
             <div className="missionIcon">{TiHeartOutline()}</div>
-            <br/>
+            <br />
             Peace
           </li>
-          <li >
+          <li>
             <div className="missionIcon">{HiOutlineScale()}</div>
-            <br/>
+            <br />
             Justice
           </li>
-          <li >
+          <li>
             <div className="missionIcon">{IoRibbonOutline()}</div>
-            <br/>
+            <br />
             Prevention
           </li>
-          <li >
+          <li>
             <div className="missionIcon">{AiOutlineMedicineBox()}</div>
-            <br/>
+            <br />
             Doctors
           </li>
-          <li >
+          <li>
             <div className="missionIcon">{TbVaccine()}</div>
-            <br/>
+            <br />
             Vaccines
           </li>
         </ul>
@@ -68,6 +68,30 @@ function Home() {
       <section id="quotes">
         <h3>Maya Angelou</h3>
         <p>"I have found that among its other benefits, giving liberates the soul of the giver"</p>
+      </section>
+
+      <section id="achievements">
+        <div id="achievementImagesContainer" className="cardContainer">
+          <iframe
+            src="https://www.youtube.com/embed/EHh5_6vcCoo?mute=1"
+            title="waterWellsForAfricaVideo"
+            id="waterVideo">
+          </iframe>
+
+          <div id="waterWells" className="cardItem">
+            <span>Water Wells</span>
+          </div>
+          <div id="adoptions" className="cardItem">
+            <span>Adoptions</span>
+          </div>
+          <div id="works" className="cardItem">
+            <span>Works</span>
+          </div>
+        </div>
+
+        <div id="achievementsContainer">
+
+        </div>
       </section>
     </div>
   );
