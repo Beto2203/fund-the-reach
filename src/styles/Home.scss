@@ -104,7 +104,7 @@ main {
   }
 }
 
-#missionsTitle {
+.subHeading {
   text-align: center;
   font-size: 20px;
   color: #737373;
@@ -239,4 +239,31 @@ main {
     background-image: url("../media/waterwells.jpg");
     grid-column: auto;
   }
+}
+
+#achievementsCharts {
+  margin-top: 40px;
+  .subHeading {
+    margin-bottom: 40px;
+  }
+}
+
+#achievementsContainer {
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 10%;
+    gap: 20px;
+    font-size: 24px;
+    color: #737373;
+  }
+}
+
+.achievementItem {
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+  border-bottom: 1px solid rgba(220, 220, 220, 0.3);
+}
+.achievementNum {
+  justify-self: end;
 }
