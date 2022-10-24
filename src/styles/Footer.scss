@@ -1,0 +1,92 @@
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5% 10%;
+  color: white;
+  background-color: #313131;
+  gap: 50px;
+
+  p {
+    color: #a3a3a3;
+  }
+}
+
+#steps {
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+  gap: 15px;
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  ul {
+    font-size: 16px;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+#footerLogo {
+  width: 120px;
+  border-radius: 20px;
+}
+
+.footerIcon {
+  border-radius: 50%;
+  border: 1px solid red;
+  font-size: 12px;
+  padding: 2px;
+
+}
+
+#partners {
+  display: grid;
+  gap: 20px;
+
+  h5 {
+    font-size: 26px;
+  }
+
+  ul {
+    display: grid;
+    grid-auto-flow: column;
+    background-color: white;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    border-radius: 30px;
+  }
+
+  li {
+    display: flex;
+  }
+
+  form {
+    display: grid;
+    gap: 10px;
+
+    label {
+      font-size: 20px;
+    }
+    input {
+      grid-column: 1 / 2;
+      border-radius: 5px;
+      border: none;
+      background-color: #bebebe;
+    }
+    button {
+      grid-column: 2 / 3;
+      font-size: 18px;
+      padding: 3px;
+      width: 120px;
+    }
+  }
+}
