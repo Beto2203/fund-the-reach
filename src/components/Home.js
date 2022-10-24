@@ -1,9 +1,9 @@
 import '../styles/Home.css';
 import { HiOutlineCircleStack, HiOutlineScale } from 'react-icons/hi2';
-import { TiHeartOutline } from 'react-icons/ti';
-import { IoRibbonOutline } from 'react-icons/io5';
+import { TiHeartOutline, TiLightbulb } from 'react-icons/ti';
+import { IoRibbonOutline, IoEarthOutline } from 'react-icons/io5';
 import { AiOutlineMedicineBox } from 'react-icons/ai';
-import { TbVaccine } from 'react-icons/tb';
+import { TbVaccine, TbPlant } from 'react-icons/tb';
 
 function Home() {
 
@@ -110,7 +110,25 @@ function Home() {
       </section>
 
       <section id="newsletter">
+        <form>
+          <h4>Newsletter</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <input type="email" placeholder="Email" />
+          <button>Subscribe</button>
+        </form>
 
+        <div className="newsletterItem">
+          <div className="icon">{TiLightbulb()}</div>
+          <div id="renew" className="textIcon">Renewable Energy</div>
+        </div>
+        <div className="newsletterItem">
+          <div className="icon">{IoEarthOutline()}</div>
+          <div id="global" className="textIcon">Global Warming</div>
+        </div>
+        <div className="newsletterItem">
+          <div className="icon">{TbPlant()}</div>
+          <div id="protect" className="textIcon">Protect Nature</div>
+        </div>
       </section>
     </div>
   );
