@@ -249,6 +249,11 @@ main h1 {
   font-size: 24px;
   color: #737373;
 }
+@media (max-width: 600px) {
+  #achievementsContainer ul {
+    grid-template-columns: 1fr;
+  }
+}
 
 .achievementItem {
   display: grid;
@@ -258,6 +263,83 @@ main h1 {
 
 .achievementNum {
   justify-self: end;
+}
+
+#newsletter {
+  background-image: url("../media/newsletterbg.jpg");
+  background-position: bottom;
+  background-size: cover;
+  padding: 5%;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+#newsletter form {
+  color: #737373;
+  display: grid;
+  background-color: white;
+  padding: 30px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+#newsletter form h4 {
+  font-size: 26px;
+}
+#newsletter form p {
+  grid-row: 2;
+  line-height: 20px;
+}
+#newsletter form input {
+  grid-row: 3;
+  border: 1px solid rgba(220, 220, 220, 0.3);
+  height: 50px;
+}
+#newsletter form button {
+  grid-row: 4;
+  width: 100px;
+  height: 50px;
+}
+
+@media (max-width: 900px) {
+  #newsletter {
+    grid-template-columns: auto;
+  }
+}
+.newsletterItem {
+  color: white;
+  display: grid;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  text-align: center;
+  font-size: 60px;
+}
+
+#renew {
+  background-color: #f6d723;
+  border-radius: 20px;
+  padding: 7px;
+  text-shadow: 0 0 30px black;
+}
+
+#global {
+  background-color: #fd7e27;
+  border-radius: 20px;
+  padding: 7px;
+  text-shadow: 0 0 30px black;
+}
+
+#protect {
+  background-color: #c7fa0a;
+  border-radius: 20px;
+  padding: 7px;
+  text-shadow: 0 0 30px black;
 }
 
 /*# sourceMappingURL=Home.css.map */
