@@ -1,0 +1,18 @@
+#cardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin: 50px 10%;
+}
+
+@media (max-width: 900px) {
+  #cardContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  #cardContainer {
+    grid-template-columns: 1fr;
+  }
+}
