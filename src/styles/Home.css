@@ -301,6 +301,11 @@ main h1 {
   grid-row: 4;
   width: 100px;
   height: 35px;
+  padding: 7px;
+  color: white;
+  background-color: #00baa3;
+  border: none;
+  border-radius: 30px;
 }
 
 @media (max-width: 900px) {
