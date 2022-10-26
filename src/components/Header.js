@@ -17,7 +17,7 @@ function Dropdown({ dropMenuHandler }) {
   );
 }
 
-function Header() {
+function Header({ user }) {
   const [showDropdown, setShowDropdown] = useState(false);
 
   const dropMenuHandler = () => {
@@ -36,15 +36,19 @@ function Header() {
           <li id="logo"><Link to="/"><img src={logo} alt="Fund the Reach Logo" /></Link></li>
           <li id="menuIcon" onClick={dropMenuHandler}>{MdMenu()}</li>
           <li className="navItem"><Link to="/">Home</Link></li>
-          <li className="navItem"><Link to="/charities">Charities</Link></li>
           <li className="navItem"><Link to="/causes">Causes</Link></li>
           <li className="navItem"><Link to="/events">Events</Link></li>
           <li className="navItem"><Link to="/contact">Contact</Link></li>
+          {
+            user
+              ? <li id="logOutButton" className="navItem">Log Out</li>
+              : <li className="navItem"><Link to="/login">Sign In</Link></li>
+          }
         </ul>
       </nav>
       {
         showDropdown &&
-        <Dropdown dropMenuHandler={dropMenuHandler}/>
+        <Dropdown dropMenuHandler={dropMenuHandler} />
       }
     </header>
   );
