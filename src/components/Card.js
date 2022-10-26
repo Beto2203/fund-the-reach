@@ -16,7 +16,7 @@ function Card({ causeObject }) {
       <p>
         {content}
       </p>
-      <Link to={`/${id}`} style={style}>Read More</Link>
+      <Link to={'/causes'} style={style}>Read More</Link>
     </div>
   );
 }

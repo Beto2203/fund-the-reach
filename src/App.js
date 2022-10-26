@@ -17,8 +17,6 @@ function App() {
         <Route path="/causes" element={<Causes />} />
         <Route path="/events" element={<Events />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/login" element={<Contact />} />
-
       </Routes>
 
       <Footer />
