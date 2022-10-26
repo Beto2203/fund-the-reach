@@ -6,6 +6,10 @@ footer {
   background-color: #313131;
   gap: 50px;
 
+  @media (max-width: 650px) {
+    grid-template: 1fr 1fr / 1fr;
+  }
+
   p {
     color: #a3a3a3;
   }
@@ -25,6 +29,26 @@ footer {
     font-size: 16px;
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
+  }
+
+  @media (max-width: 700px) {
+    img {
+      align-self: center;
+      justify-self: center;
+    }
+    p {
+      font-size: 12px;
+    }
+    ul {
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      font-size: 12px;
+    }
+  }
+  @media (max-width: 350px) {
+    p {
+      font-size: 10px;
+    }
   }
 
   li {
@@ -64,6 +88,13 @@ footer {
     gap: 10px;
     border-radius: 30px;
   }
+  @media (max-width: 700px) {
+    ul {
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      width: 50%;
+      margin: auto;
+    }
+  }
 
   li {
     display: flex;
@@ -76,17 +107,30 @@ footer {
     label {
       font-size: 20px;
     }
+
     input {
       grid-column: 1 / 2;
       border-radius: 5px;
       border: none;
       background-color: #bebebe;
     }
+
     button {
       grid-column: 2 / 3;
       font-size: 18px;
       padding: 3px;
       width: 120px;
+      color: white;
+      background-color: #00baa3;
+      border: none;
+      border-radius: 30px;
+    }
+
+    @media (max-width: 400px) {
+      button {
+        width: 70px;
+        font-size: 12px;
+      }
     }
   }
 }

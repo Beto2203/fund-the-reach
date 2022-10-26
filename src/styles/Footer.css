@@ -6,6 +6,11 @@ footer {
   background-color: #313131;
   gap: 50px;
 }
+@media (max-width: 650px) {
+  footer {
+    grid-template: 1fr 1fr/1fr;
+  }
+}
 footer p {
   color: #a3a3a3;
 }
@@ -23,6 +28,25 @@ footer p {
   font-size: 16px;
   display: grid;
   grid-template: 1fr 1fr/1fr 1fr;
+}
+@media (max-width: 700px) {
+  #steps img {
+    align-self: center;
+    justify-self: center;
+  }
+  #steps p {
+    font-size: 12px;
+  }
+  #steps ul {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    font-size: 12px;
+  }
+}
+@media (max-width: 350px) {
+  #steps p {
+    font-size: 10px;
+  }
 }
 #steps li {
   display: flex;
@@ -58,6 +82,13 @@ footer p {
   gap: 10px;
   border-radius: 30px;
 }
+@media (max-width: 700px) {
+  #partners ul {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 50%;
+    margin: auto;
+  }
+}
 #partners li {
   display: flex;
 }
@@ -79,6 +110,16 @@ footer p {
   font-size: 18px;
   padding: 3px;
   width: 120px;
+  color: white;
+  background-color: #00baa3;
+  border: none;
+  border-radius: 30px;
+}
+@media (max-width: 400px) {
+  #partners form button {
+    width: 70px;
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=Footer.css.map */
